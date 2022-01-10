@@ -1,0 +1,19 @@
+
+version: 2
+
+models:
+  - name: ingest
+    description: "A starter dbt model"
+    columns:
+      - name: Updated
+        description: "The primary key for this table"
+        tests:
+          - not_null
+
+  - name: created_date
+    description: "A starter dbt model"
+    columns:
+      - name: Updated
+        description: "The primary key for this table"
+        tests:
+          - not_null
