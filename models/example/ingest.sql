@@ -6,9 +6,10 @@
 
     Try changing "table" to "view" below
 */
+{{ config(materialized='table') }}
+
 WITH ingest as (
-    select Updated as dt
-    from 'test.csv'
+    SELECT 10 as a, 20 as b
 )
 select *
 from ingest;

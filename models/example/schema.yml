@@ -5,15 +5,21 @@ models:
   - name: ingest
     description: "A starter dbt model"
     columns:
-      - name: Updated
-        description: "The primary key for this table"
+      - name: a
+        description: "neat, a table with two integers init"
+        tests:
+          - not_null
+      - name: b
         tests:
           - not_null
 
-  - name: created_date
-    description: "A starter dbt model"
+  - name: second
+    description: "It just kind of spits out the same stuff in ingest"
     columns:
-      - name: Updated
+      - name: a
         description: "The primary key for this table"
+        tests:
+          - not_null
+      - name: b
         tests:
           - not_null
